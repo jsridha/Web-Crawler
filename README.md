@@ -16,4 +16,4 @@ The layout of the crawler is as follows:
 There are two versions of the crawler, one implementing multithreading and one that executes sequentially. The multithreaded crawler takes one additional argument as part of its crawl method - num_threads, which determines the number of threads that are used in the execution of the crawl.
 
 ## Notes
-Both versions of the executor.py require the seed urls and related terms to be entered as arrays within the executor.py module
+Both versions of the executor.py require the seed urls and related terms to be entered as arrays within the executor.py module. Additionally, there is an included file indexer.py which can be used to load the results of the program into an ElasticSearch instance.
