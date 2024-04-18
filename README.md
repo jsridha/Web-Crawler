@@ -15,5 +15,7 @@ The layout of the crawler is as follows:
 
 There are two versions of the crawler, one implementing multithreading and one that executes sequentially. The multithreaded crawler takes one additional argument as part of its crawl method - num_threads, which determines the number of threads that are used in the execution of the crawl.
 
+Additionally included is a Web UI for evaluating the relevance of the crawled documents on a scale of 0-2 for further use within an Information Retrieval pipeline. The UI is built utilizing the Flask microframework, and is based around the use of an ElasticSearch Cloud instance to store the results of the web crawl, but can be easily adapted for use with a local ElasticSearch instance.
+
 ## Notes
 Both versions of the executor.py require the seed urls and related terms to be entered as arrays within the executor.py module. Additionally, there is an included file indexer.py which can be used to load the results of the program into an ElasticSearch instance.

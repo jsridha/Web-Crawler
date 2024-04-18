@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div>
+        <h1>Query Evaluation</h1>
+        <h2>Evaluating result {{ url_num }} of 200</h2>
+        <h3> <strong>Title:</strong> {{ title }}</h5>
+        <h3> <strong>URL:</strong> <a href="{{ url }}"> {{ url }} </a></h5>
+        <form action="/evaluate.html" method="post">
+            <button type="submit" name="grade" value="0">0 (non-relevant)</button>
+            <button type="submit" name="grade" value="1">1 (relevant)</button>
+            <button type="submit" name="grade" value="2">2 (very relevant)</button>
+        </form>
+    </div>
+{% endblock %}

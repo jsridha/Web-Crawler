@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div>
+        <h1>Query Evaluation Page</h1>
+        <p>This search engine page was made for evaluating crawled documents within an IR pipeline.</p>
+        <form action="/" method="post">
+            <input type="text" name="assessor" placeholder="Your Name (replace all spaces with _)">
+            <input type="text" name="query" placeholder="Enter your search query (no _)...">
+
+            <button type="submit">Start</button>
+        </form>
+    </div>
+{% endblock %}
